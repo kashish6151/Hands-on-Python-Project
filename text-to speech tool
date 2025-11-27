@@ -1,0 +1,19 @@
+# Text to Speech Example
+import pyttsx3
+speaker = pyttsx3.init()
+speaker.say("Aaaaaaaaahihihhiihihihiihihhiahiahiahiahiahiahiahiahia.")
+speaker.runAndWait()
+
+# Speech to text Recognition Example
+import speech_recognition as sr     # Import speech recognizer
+
+r = sr.Recognizer()                 # Create recognizer object
+
+with sr.Microphone() as source:     # Use microphone as audio source
+    print("Speak now...")
+    audio = r.listen(source)        # Listen to your speech
+
+# Convert speech into text using Google API
+text = r.recognize_google(audio)    # Convert audio → text
+
+print("You said:", text)            # Print the text on screen
