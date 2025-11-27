@@ -1,0 +1,18 @@
+import streamlit as st
+
+# Title of the dashboard
+st.title("📊 kashish Streamlit Dashboard")
+
+# Simple message
+st.write("Welcome to your first interactive dashboard!")
+
+# Text input field
+name = st.text_input("Enter your name:")
+
+# Number input field
+age = st.number_input("Enter your age:", min_value=1, max_value=120, step=1)
+
+# A button to show result
+if st.button("Show Details"):
+    # When button pressed, this will show the output
+    st.success(f"Hello {name}! You are {age} years old.")
