@@ -1,0 +1,19 @@
+correct_password = int(input("SET YOUR ATM PIN:"))
+balance = 500000
+
+attempts = 0
+
+while attempts < 3:
+    pwd = int(input("Enter ATM Password: "))
+
+    if pwd == correct_password:
+        print("Login Successful!")
+        print("Your Balance:", balance)
+        amount = int(input("Enter withdraw Ammount :"))
+        remain_balance = balance - amount
+        print("Your remain ammount :",remain_balance) 
+    else:
+        attempts += 1
+        print(f"Wrong Password! Attempts left: {3 - attempts}")
+
+print("Too many wrong attempts! Your account is locked. Exiting...")
