@@ -1,0 +1,23 @@
+while True:
+        print(" ------Welcome to calculator------")
+        print("Enter your choise \n 1.Addition \n2.Subtraction \n3.Multiplication \n4.Division")
+        choise = input("Enter your choise")
+        if choise =="1":
+            num1 = int(input("Enter your First number :"))
+            num2 = int(input("Enter your Second number :"))
+            print("Sum of these two number is :",num1 + num2 )
+        elif choise =="2":
+            num1 = int(input("Enter your First number :"))
+            num2 = int(input("Enter your Second number :"))
+            print("Subtraction of these two number is :",num1 - num2 )
+        elif choise =="3":
+            num1 = int(input("Enter your First number :"))
+            num2 = int(input("Enter your Second number :"))
+            print("Product of these two number is :",num1 * num2 )
+        elif choise =="4":
+            num1 = int(input("Enter your First number :"))
+            num2 = int(input("Enter your Second number :"))
+            print("Division of these two number is :",num1 / num2 ) 
+        else:
+            print("Entered choise in Invalid")
+            break
